@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-08-31T18:16:31.785Z",
+  "totals": {
+    "passed": 321,
+    "failed": 0
+  },
+  "contractTests": 72,
+  "frontendTests": 249,
+  "suites": [
+    {
+      "id": "contract",
+      "kind": "contract",
+      "name": "Soroban contract tests (Rust)",
+      "passed": 72,
+      "failed": 0,
+      "exitCode": 0,
+      "durationMs": 844,
+      "skipped": false
+    },
+    {
+      "id": "logic",
+      "kind": "frontend",
+      "name": "Escrow state machine",
+      "passed": 93,
+      "failed": 0,
+      "exitCode": 0,
+      "durationMs": 89,
+      "skipped": false
+    },
+    {
+      "id": "render",
+      "kind": "frontend",
+      "name": "Application rendering (jsdom)",
+      "passed": 65,
+      "failed": 0,
+      "exitCode": 0,
+      "durationMs": 1786,
+      "skipped": false
+    },
+    {
+      "id": "chain",
+      "kind": "frontend",
+      "name": "Chain layer: wallet, tx lifecycle, errors, events",
+      "passed": 91,
+      "failed": 0,
+      "exitCode": 0,
+      "durationMs": 1549,
+      "skipped": false
+    }
+  ]
+}

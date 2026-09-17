@@ -1,0 +1,29 @@
+{
+  "network": "testnet",
+  "networkPassphrase": "Test SDF Network ; September 2015",
+  "rpcUrl": "https://soroban-testnet.stellar.org",
+  "horizonUrl": "https://horizon-testnet.stellar.org",
+  "explorerBase": "https://stellar.expert/explorer/testnet",
+  "friendbotUrl": "https://friendbot.stellar.org",
+  "escrowContractId": "CDV44SSWYJAKHBBXIEJELJYEFYC24DGWLZZ6QR3UJ2TG4LJERXAKOVFD",
+  "resolutionContractId": "CD5VSNBXJVIHUCE6YRU26UTNICVSMG6S6GWUKGV2FFGOIRHQ7CDQZE3L",
+  "tokenContractId": "CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC",
+  "tokenSymbol": "XLM",
+  "tokenDecimals": 7,
+  "feeBps": 250,
+  "adminPublicKey": "GCHZVGXVRPDOOJZDYO7GM6D656ADWARZQS2NFCYYDFUX6O3RX5634OG4",
+  "deployedAt": "2026-08-31T17:37:45.138Z",
+  "deployment": {
+    "escrowWasmHash": "02c465a3a2d29e9ffbdb2701ad267e61c0a32b08ea119df9daafc7f2c591008d",
+    "resolutionWasmHash": "8bbb071123a4bfd0c0679dcd0846906eb68f9c69ec07faea1e9c6607a2c5fb84",
+    "transactions": {
+      "uploadResolution": "75b2c3c7b5834b5a5803c0372399ec3a68c2b00ab73c6115ba3fb2a4b499354c",
+      "uploadEscrow": "0ecf76ed404f16832f6cacc6f71c516a09971e231c25e1919b701faf1f6b4150",
+      "createResolution": "adff7a2e41341fb364bb88716cdab79e8aa8b4aa742b5cbfa0c844c406048938",
+      "createEscrow": "6b1c69ecaa301985c82a4819b76c20b94b95034e73f41576f7b7124506f4728c",
+      "initResolution": "06fec9241720076ba4fdf2835dbe62e839952a110e003f5afb83885d94060239",
+      "initEscrow": "8d505e8be743357daa2c762cbe64539788e3a635e97fc5d4dd8842a69d0cd7d4",
+      "registerEscrow": "c10f99f54a4dfd2063c4a61ddc8de9619095f7dbaac3b88136cf69223adebe19"
+    }
+  }
+}

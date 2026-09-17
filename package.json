@@ -1,0 +1,39 @@
+{
+  "name": "trustbridge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TrustBridge — peer-to-peer escrow web app with dual-approval release, dispute protection and partial refunds.",
+  "keywords": [
+    "escrow",
+    "fintech",
+    "dual-approval",
+    "disputes",
+    "web-app"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "node serve.js",
+    "dev": "node serve.js 3000",
+    "test": "node tools/logic-test.js",
+    "test:render": "node tools/render-test.js",
+    "test:all": "node tools/logic-test.js && node tools/render-test.js && node tools/chain-unit-test.js",
+    "shots": "powershell -ExecutionPolicy Bypass -File tools/shoot.ps1",
+    "images": "powershell -ExecutionPolicy Bypass -File tools/make-images.ps1",
+    "zip": "powershell -ExecutionPolicy Bypass -File tools/make-zip.ps1",
+    "contracts:build": "cargo rustc -p trustbridge-escrow --target wasm32v1-none --release --crate-type cdylib && cargo rustc -p trustbridge-resolution --target wasm32v1-none --release --crate-type cdylib",
+    "contracts:test": "cargo test",
+    "chain:deploy": "node tools/chain/deploy.js",
+    "chain:verify": "node tools/chain/verify-deployment.js",
+    "chain:test": "node tools/chain/integration-test.js",
+    "report": "node tools/test-report.js",
+    "test:chain": "node tools/chain-unit-test.js",
+    "lint": "node tools/lint.js"
+  },
+  "devDependencies": {
+    "@stellar/stellar-sdk": "^17.0.1",
+    "jsdom": "^24.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

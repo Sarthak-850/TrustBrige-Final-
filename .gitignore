@@ -1,0 +1,21 @@
+node_modules/
+package-lock.json
+
+# screenshot harness output (generated into the project root at runtime)
+_shot.html
+_frame.html
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# deployer secret key - NEVER commit
+tools/chain/.deployer.json
+.env
+.env.local
+
+# rust build output
+target/
+tools/chain/.test-accounts.json

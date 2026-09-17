@@ -1,0 +1,110 @@
+{
+  "verifiedAt": "2026-08-31T17:40:24.925Z",
+  "network": "testnet",
+  "escrowContractId": "CDV44SSWYJAKHBBXIEJELJYEFYC24DGWLZZ6QR3UJ2TG4LJERXAKOVFD",
+  "resolutionContractId": "CD5VSNBXJVIHUCE6YRU26UTNICVSMG6S6GWUKGV2FFGOIRHQ7CDQZE3L",
+  "passed": 20,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "chain-config.json complete",
+      "ok": true,
+      "detail": "network=testnet"
+    },
+    {
+      "name": "escrow contract ID is a valid strkey",
+      "ok": true,
+      "detail": "CDV44SSWYJAKHBBXIEJELJYEFYC24DGWLZZ6QR3UJ2TG4LJERXAKOVFD"
+    },
+    {
+      "name": "resolution contract ID is a valid strkey",
+      "ok": true,
+      "detail": "CD5VSNBXJVIHUCE6YRU26UTNICVSMG6S6GWUKGV2FFGOIRHQ7CDQZE3L"
+    },
+    {
+      "name": "RPC endpoint healthy",
+      "ok": true,
+      "detail": "https://soroban-testnet.stellar.org -> healthy"
+    },
+    {
+      "name": "RPC network matches config",
+      "ok": true,
+      "detail": "Test SDF Network ; September 2015"
+    },
+    {
+      "name": "escrow contract instance exists on-chain",
+      "ok": true,
+      "detail": "ledger 4434853"
+    },
+    {
+      "name": "resolution contract instance exists on-chain",
+      "ok": true,
+      "detail": "ledger 4434854"
+    },
+    {
+      "name": "token (XLM SAC) contract instance exists on-chain",
+      "ok": true,
+      "detail": "ledger 4403020"
+    },
+    {
+      "name": "escrow wasm hash matches local build",
+      "ok": true,
+      "detail": "local 02c465a3a2d29e9f... / config 02c465a3a2d29e9f..."
+    },
+    {
+      "name": "resolution wasm hash matches local build",
+      "ok": true,
+      "detail": "local 8bbb071123a4bfd0..."
+    },
+    {
+      "name": "escrow responds to version()",
+      "ok": true,
+      "detail": "-> v1"
+    },
+    {
+      "name": "resolution responds to version()",
+      "ok": true,
+      "detail": "-> v1"
+    },
+    {
+      "name": "escrow is initialised",
+      "ok": true,
+      "detail": "admin GCHZVGXVRPDOOJZDYO7GM6D656ADWARZQS2NFCYYDFUX6O3RX5634OG4"
+    },
+    {
+      "name": "resolution is initialised",
+      "ok": true,
+      "detail": "fee 250 bps"
+    },
+    {
+      "name": "escrow -> resolution binding correct",
+      "ok": true,
+      "detail": "CD5VSNBXJVIHUCE6YRU26UTNICVSMG6S6GWUKGV2FFGOIRHQ7CDQZE3L"
+    },
+    {
+      "name": "escrow token matches config",
+      "ok": true,
+      "detail": "CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC"
+    },
+    {
+      "name": "resolution -> escrow binding correct",
+      "ok": true,
+      "detail": "CDV44SSWYJAKHBBXIEJELJYEFYC24DGWLZZ6QR3UJ2TG4LJERXAKOVFD"
+    },
+    {
+      "name": "frontend config generated",
+      "ok": true,
+      "detail": "assets\\js\\chain\\config.generated.js"
+    },
+    {
+      "name": "frontend config carries the deployed escrow ID",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "frontend config contains no secret key",
+      "ok": true,
+      "detail": "no S... strkey present"
+    }
+  ]
+}

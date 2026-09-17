@@ -1,0 +1,73 @@
+{
+  "ranAt": "2026-08-31T17:46:11.005Z",
+  "network": "testnet",
+  "escrowContractId": "CDV44SSWYJAKHBBXIEJELJYEFYC24DGWLZZ6QR3UJ2TG4LJERXAKOVFD",
+  "resolutionContractId": "CD5VSNBXJVIHUCE6YRU26UTNICVSMG6S6GWUKGV2FFGOIRHQ7CDQZE3L",
+  "buyer": "GBL3ZD43BS55SZ35VIPB3JR7WF3W7D3C4T7UG3ODJ5OL6IM4AN3RAXLR",
+  "seller": "GDYUGQGV374NWACRIEYGQO5ILUEORUBYH4R6QKOOBHF7I2XOB7E3LJ4Y",
+  "admin": "GCHZVGXVRPDOOJZDYO7GM6D656ADWARZQS2NFCYYDFUX6O3RX5634OG4",
+  "escrowIds": {
+    "happyPath": "3",
+    "dispute": "4"
+  },
+  "passed": 33,
+  "failed": 0,
+  "transactions": [
+    {
+      "label": "create_escrow",
+      "hash": "0e5363ce3a94ea947f6dca14d3b4f92a0ba628575513720e36f6912d1f347d8f"
+    },
+    {
+      "label": "fund",
+      "hash": "883b8b55e07498451091eef7257aa183dc6b377ab9f3b19ca644953a4981ac3e"
+    },
+    {
+      "label": "start_work",
+      "hash": "3c924a7446f5a1f0b15310b36e2408ef8205df28c163b1b7b7825e08b5740059"
+    },
+    {
+      "label": "submit_work",
+      "hash": "8cd4de52fe62e143981cbb56266c7c5783da6d4baf9118a78589006f11993594"
+    },
+    {
+      "label": "approve (buyer)",
+      "hash": "0883c01a852afdfd57b962a7ee3218d98ebc64217741f6a2a86d8c90aad3067d"
+    },
+    {
+      "label": "approve (seller)",
+      "hash": "51bce3e7350d120c1e98d742376e9c971d43569acb4a7df0df212292c9f840ce"
+    },
+    {
+      "label": "release",
+      "hash": "df19599007de36ccc9b1323e6545142be8852629945b71ce4bc7913a5fa67605"
+    },
+    {
+      "label": "create_escrow (dispute case)",
+      "hash": "3cee4d537aed7877e159e710e6a9d61919d51f6c49ea82e91176f3865b8abc39"
+    },
+    {
+      "label": "fund (dispute case)",
+      "hash": "dea7356a6a19f661ca5057c40176285755dca986a18df10f944c2adbcf49f7ad"
+    },
+    {
+      "label": "raise_dispute",
+      "hash": "c7dfba98089d1460cb343baebafc19c0eb8c375fa6b2b56c76914764dea53ff0"
+    },
+    {
+      "label": "resolve_dispute (30% refund, release remainder)",
+      "hash": "4e2a1601abd12661e6084e42aade08f60bf9d80830d426e85f3f5627fc9df834"
+    }
+  ],
+  "eventTopicsObserved": [
+    "approval_submitted",
+    "dispute_raised",
+    "dispute_resolved",
+    "escrow_created",
+    "escrow_funded",
+    "funds_released",
+    "partial_refund_processed",
+    "work_started",
+    "work_submitted"
+  ],
+  "explorer": "https://stellar.expert/explorer/testnet/contract/CDV44SSWYJAKHBBXIEJELJYEFYC24DGWLZZ6QR3UJ2TG4LJERXAKOVFD"
+}

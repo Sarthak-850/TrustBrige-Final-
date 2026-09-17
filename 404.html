@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Page not found — TrustBridge</title>
+<meta name="robots" content="noindex" />
+<meta name="color-scheme" content="dark light" />
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<style>
+  .nf { min-height: 100vh; display: grid; place-items: center; padding: var(--sp-6); }
+  .nf-card { max-width: 46ch; text-align: center; display: grid; gap: var(--sp-4); justify-items: center; }
+  .nf-code { font-size: 3.4rem; font-weight: 700; letter-spacing: -.04em; color: var(--brand); line-height: 1; }
+</style>
+</head>
+<body>
+  <div class="nf">
+    <div class="nf-card">
+      <span class="brand-mark" aria-hidden="true" style="width:44px;height:44px;border-radius:12px">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M4 17h16M8 17V9.5L12 6l4 3.5V17" stroke="#fff" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 17v-4" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <div class="nf-code">404</div>
+      <h1 style="font-size:1.35rem">That page isn’t part of TrustBridge</h1>
+      <p class="dim" style="font-size:.9rem;line-height:1.6">
+        TrustBridge runs entirely from its home page — every screen lives behind a
+        <span class="mono">#/</span> route. Head back and you’ll land on your dashboard
+        if you’re signed in.
+      </p>
+      <div class="row-tight wrap" style="justify-content:center">
+        <a class="btn btn-primary" href="./">Back to TrustBridge</a>
+        <a class="btn btn-outline" href="./#/login">Sign in</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /tools/
+
+# Every application screen lives behind a #/ route on the home page, so there is
+# nothing else for a crawler to fetch.
+Sitemap: /sitemap.xml

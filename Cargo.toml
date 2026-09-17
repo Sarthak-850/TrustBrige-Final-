@@ -1,0 +1,29 @@
+[workspace]
+resolver = "2"
+members = ["contracts/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+publish = false
+
+[workspace.dependencies]
+soroban-sdk = "27.0.6"
+
+# Soroban contracts are size-sensitive: optimise hard, keep overflow checks on
+# (an arithmetic wrap in escrow accounting would be a fund-loss bug), and abort
+# on panic so a failed invariant can never unwind into a partial state change.
+[profile.release]
+opt-level = "z"
+overflow-checks = true
+debug = 0
+strip = "symbols"
+debug-assertions = false
+panic = "abort"
+codegen-units = 1
+lto = true
+
+[profile.release-with-logs]
+inherits = "release"
+debug-assertions = true
